@@ -1,0 +1,400 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+
+
+/*-----------------------Navbar-----------------------*/
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    padding: 0 20px;
+}
+.navbar h2 {
+    font-size: 22px;
+    color: white;
+    padding: 15px 20px;
+    margin-left: 90px;
+}
+.nav-links {
+    display: flex;
+    margin-right: 90px;
+}
+.nav-link {
+    font-weight: 400;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+/*-----------------------Video Container-----------------------*/
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.background-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+.background-video.active {
+    display: block;
+}
+.content {
+    position: absolute;
+    top: 30%;
+    color: white;
+    z-index: 5;
+    margin-left: 110px;
+    width: 800px;
+}
+.content h1 {
+    font-size: 60px;
+    font-weight: 900;
+}
+.content button{
+    padding: 15px;
+    font-size: 16px;
+    color: black;
+    background-color: white;
+    border-radius: 30px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+.content button:hover{
+    background-color: #ffe927;
+    color: black;
+}
+.circle-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+}
+.circle {
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.circle:hover {
+    background: gray;
+}
+
+
+
+
+
+
+
+
+
+/*-----------------------Srilanka About-----------------------*/
+.srilanka-about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin-top: 80px;
+
+}
+.lanka-details{
+    width: 500px;
+    text-align: left;
+    padding-right: 20px;
+}
+.lanka-iamge{
+    width: 500px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+.lanka-iamge img{
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0px 25px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+
+
+/*-----------------------Popular places-----------------------*/
+.popular {
+    text-align: center;
+    margin-top: 60px;
+}
+.popular h1 {
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+.places {
+    display: flex;
+    gap: 80px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+.place {
+    cursor: pointer;
+    width: 230px;
+    height: 330px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 0px 100px rgba(0, 0, 0, 0.514);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+.place img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.place-details {
+    padding: 15px;
+}
+.place-details h2 {
+    font-size: 20px;
+    margin: 10px 0 5px;
+}
+.place-details p {
+    font-size: 14px;
+    color: #555;
+}
+.place:hover {
+    transform: scale(1.05);
+}
+.custom-link {
+    text-decoration: none;
+    color: black;
+}
+
+.custom-link:hover {
+    color: black;
+}
+.popular button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 25px;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+.popular button:hover {
+    background-color: white;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------Galley-----------------------*/
+.gallery{
+    align-items: center;
+    height: 600px;
+    margin-top: 80px;
+    margin-bottom: 0px;
+}
+.gallery-box {
+    text-align: center;
+}
+.gallery-box img{
+    height: 470px;
+    border-radius: 15px;
+}
+.galley-text {
+    margin-top: -400px;
+    margin-left: 180px;
+    width: 500px;
+    color: white;
+}
+.galley-text h1{
+    font-size: 50px;
+}
+.galley-text button{
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    background-color: white;
+    border-radius: 30px;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.galley-text button:hover{
+    background-color: #ffe927;
+    color: black;
+}
+
+
+
+
+
+
+
+/*-----------------------Footer-----------------------*/
+.bend1{
+    padding: 0;
+    margin-bottom: -60px;
+    margin-left: -30px;
+}
+.bend2{
+    padding: 0;
+    margin-bottom: -306px;
+    margin-left: 647px;
+}
+.footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding-right: 200px;
+    padding-left: 50px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    display: flex;
+}
+.footer-logo {
+    display: grid;
+    flex: 1;
+    min-width: 200px;
+    margin: 20px 0;
+}
+.footer-logo h1 {
+    font-size: 24px;
+}
+.footer-logo p {
+    margin: 10px 0 20px;
+    max-width: 200px;
+}
+.footer-socials {
+    display: flex;
+    gap: 10px;
+}
+.footer-socials a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 24px;
+}
+.footer-columns {
+    flex: 1;
+    width: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.footer-columns h3 {
+    margin-bottom: 20px;
+}
+.footer-columns ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-columns ul li {
+    margin: 10px 0;
+}
+.footer-columns ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 20px 0;
+}
+.footer-column h3 {
+    margin-bottom: 20px;
+}
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-column ul li {
+    margin: 10px 0;
+}
+.footer-column ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.newsletter {
+    display: flex;
+    flex-direction: column;
+}
+.newsletter input {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 15px;
+}
+.newsletter button {
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: #ffe927;
+    color: black;
+    cursor: pointer;
+}
+.newsletter button:hover {
+    background-color: white;
+    color: black;
+}
+.footer-bottom {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+    color: #ffffff;
+    border-top: 1px solid #2c3e50;
+}

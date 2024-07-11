@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel 2 Lanka</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /*-----------------------Navbar-----------------------*/
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 10;
+            padding: 0 20px;
+        }
+        .navbar h2 {
+            font-size: 22px;
+            color: white;
+            padding: 15px 20px;
+            margin-left: 90px;
+        }
+        .nav-links {
+            display: flex;
+            margin-right: 90px;
+        }
+        .nav-link {
+            font-weight: 400;
+            padding: 15px 20px;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .nav-link:hover {
+            text-decoration: underline;
+        }
+
+
+
+        /*-----------------------Header-----------------------*/
+        .header {
+            width: 100%;
+        }
+        .header img {
+            width: 100%;
+        }
+        .header h1 {
+            color: white;
+            font-size: 80px;
+            margin-top: -230px;
+            text-align: center;
+        }
+
+
+        /*-----------------------Content-----------------------*/
+        .content-1 {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            margin-top: 170px;
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.322);
+            border-radius: 20px;
+            height: 350px;
+        }
+        .content {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            margin-top: 50px;
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.322);
+            border-radius: 20px;
+            height: 350px;
+        }
+        .left-content {
+            width: 350px;
+            text-align: center;
+            align-items: center;
+            height: 350px;
+        }
+        .left-content img {
+            width: 350px;
+            border-radius: 20px;
+            height: auto;
+        }
+        .right-content {
+            padding-left: 20px;
+            height: 350px;
+        }
+        .right-content p{
+            margin-top: 5px;
+        }
+
+
+
+
+
+
+
+        /*-----------------------Footer-----------------------*/
+        .bend1 {
+            padding: 0;
+            margin-bottom: -60px;
+            margin-left: -30px;
+        }
+        .bend2 {
+            padding: 0;
+            margin-bottom: -306px;
+            margin-left: 647px;
+        }
+        .footer {
+            background-color: #000000;
+            color: #ffffff;
+            padding-right: 200px;
+            padding-left: 50px;
+            padding-top: 40px;
+            padding-bottom: 30px;
+            display: flex;
+        }
+        .footer-logo {
+            display: grid;
+            flex: 1;
+            min-width: 200px;
+            margin: 20px 0;
+        }
+        .footer-logo h1 {
+            font-size: 24px;
+        }
+        .footer-logo p {
+            margin: 10px 0 20px;
+            max-width: 200px;
+        }
+        .footer-socials {
+            display: flex;
+            gap: 10px;
+        }
+        .footer-socials a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 24px;
+        }
+        .footer-columns {
+            flex: 1;
+            width: 0px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .footer-columns h3 {
+            margin-bottom: 20px;
+        }
+        .footer-columns ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer-columns ul li {
+            margin: 10px 0;
+        }
+        .footer-columns ul li a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .footer-column {
+            flex: 1;
+            min-width: 200px;
+            margin: 20px 0;
+        }
+        .footer-column h3 {
+            margin-bottom: 20px;
+        }
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer-column ul li {
+            margin: 10px 0;
+        }
+        .footer-column ul li a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .newsletter {
+            display: flex;
+            flex-direction: column;
+        }
+        .newsletter input {
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 15px;
+        }
+        .newsletter button {
+            padding: 10px;
+            border: none;
+            border-radius: 15px;
+            background-color: #ffe927;
+            color: black;
+            cursor: pointer;
+        }
+        .newsletter button:hover {
+            background-color: white;
+            color: black;
+        }
+        .footer-bottom {
+            text-align: center;
+            padding: 20px;
+            background-color: #000000;
+            color: #ffffff;
+            border-top: 1px solid #2c3e50;
+        }
+    </style>
+</head>
+
+
+
+
+
+
+
+
+
+
+<body>
+    <div class="navbar">
+        <h2>Travel 2 Lanka</h2>
+        <div class="nav-links">
+            <a href="Home.html" class="nav-link">HOME</a>
+            <a href="Gallery.html" class="nav-link">GALLERY</a>
+            <a href="Explore.html" class="nav-link">EXPLORE</a>
+            <a href="Aboutus.html" class="nav-link">ABOUT US</a>
+            <a href="Contactus.html" class="nav-link">CONTACT US</a>
+        </div>
+    </div>
+
+    <div class="header">
+        <img src="Assets/banner.png" alt=""/>
+        <h1>Colombo</h1>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="content-1">
+        <div class="left-content">
+            <img src="Assets/lotus-tower.png" alt=""/>
+        </div>
+        <div class="right-content">
+            <h2>Colombo Lotus Tower (Nelum Kuluna)</h2>
+            <p><b>Location:</b> AC6, Colombo 01000, Sri Lanka</p>
+            <p><b>Height:</b> 350 meters (1,150 feet)</p>
+            <p>The Lotus Tower making it the tallest self-supported structure in South Asia. This iconic tower is a 
+                significant tourist attraction, offering an observation deck with panoramic views of the city and a 
+                revolving restaurant that provides a unique dining experience with 360-degree vistas. 
+                In addition to these, the tower includes planned amusement facilities and conference and banquet halls 
+                for various events. Open throughout the week, the tower has different ticket prices for 
+                local and international visitors, with discounts for children and groups. Easily accessible 
+                from major parts of Colombo, the best times to visit are early mornings or late afternoons to avoid 
+                crowds and enjoy the best views.
+            </p>
+            <p>Advance booking is recommended for the revolving restaurant and special events. The tower is also 
+                conveniently located near other attractions such as Galle Face Green and Beira Lake, 
+                making it a must-see landmark that blends modern architecture with cultural significance.
+            </p>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="left-content">
+            <img src="Assets/water world.png" alt=""/>
+        </div>
+        <div class="right-content">
+            <h2>Colombo Water World</h2>
+            <p><b>Location:</b> AC6, Colombo 01000, Sri Lanka</p>
+            <p><b>Height:</b> 350 meters (1,150 feet)</p>
+            <p>The Lotus Tower making it the tallest self-supported structure in South Asia. This iconic tower is a 
+                significant tourist attraction, offering an observation deck with panoramic views of the city and a 
+                revolving restaurant that provides a unique dining experience with 360-degree vistas. 
+                In addition to these, the tower includes planned amusement facilities and conference and banquet halls 
+                for various events. Open throughout the week, the tower has different ticket prices for 
+                local and international visitors, with discounts for children and groups. Easily accessible 
+                from major parts of Colombo, the best times to visit are early mornings or late afternoons to avoid 
+                crowds and enjoy the best views.
+            </p>
+            <p>Advance booking is recommended for the revolving restaurant and special events. The tower is also 
+                conveniently located near other attractions such as Galle Face Green and Beira Lake, 
+                making it a must-see landmark that blends modern architecture with cultural significance.
+            </p>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="left-content">
+            <img src="Assets/gallefacegreen.png" alt=""/>
+        </div>
+        <div class="right-content">
+            <h2>Colombo Galle Face Green</h2>
+            <p><b>Location:</b> AC6, Colombo 01000, Sri Lanka</p>
+            <p><b>Height:</b> 350 meters (1,150 feet)</p>
+            <p>The Lotus Tower making it the tallest self-supported structure in South Asia. This iconic tower is a 
+                significant tourist attraction, offering an observation deck with panoramic views of the city and a 
+                revolving restaurant that provides a unique dining experience with 360-degree vistas. 
+                In addition to these, the tower includes planned amusement facilities and conference and banquet halls 
+                for various events. Open throughout the week, the tower has different ticket prices for 
+                local and international visitors, with discounts for children and groups. Easily accessible 
+                from major parts of Colombo, the best times to visit are early mornings or late afternoons to avoid 
+                crowds and enjoy the best views.
+            </p>
+            <p>Advance booking is recommended for the revolving restaurant and special events. The tower is also 
+                conveniently located near other attractions such as Galle Face Green and Beira Lake, 
+                making it a must-see landmark that blends modern architecture with cultural significance.
+            </p>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="left-content">
+            <img src="Assets/dehiwala zoo.png" alt=""/>
+        </div>
+        <div class="right-content">
+            <h2>Dehiwala Zoological Garden</h2>
+            <p><b>Location:</b> AC6, Colombo 01000, Sri Lanka</p>
+            <p><b>Height:</b> 350 meters (1,150 feet)</p>
+            <p>The Lotus Tower making it the tallest self-supported structure in South Asia. This iconic tower is a 
+                significant tourist attraction, offering an observation deck with panoramic views of the city and a 
+                revolving restaurant that provides a unique dining experience with 360-degree vistas. 
+                In addition to these, the tower includes planned amusement facilities and conference and banquet halls 
+                for various events. Open throughout the week, the tower has different ticket prices for 
+                local and international visitors, with discounts for children and groups. Easily accessible 
+                from major parts of Colombo, the best times to visit are early mornings or late afternoons to avoid 
+                crowds and enjoy the best views.
+            </p>
+            <p>Advance booking is recommended for the revolving restaurant and special events. The tower is also 
+                conveniently located near other attractions such as Galle Face Green and Beira Lake, 
+                making it a must-see landmark that blends modern architecture with cultural significance.
+            </p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <img class="bend1" src="Assets/bend1.png" alt=""/>
+        <img class="bend2" src="Assets/bend2.png" alt=""/>
+        <div class="footer">
+            <div class="footer-logo">
+                <h1>Travel 2 Lanka</h1>
+                <p>Your Ultimate Guide to discover the enchanting beauty and rich cultural heritage of Sri Lanka</p>
+                <div class="footer-socials">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-columns">
+                <h3>Pages</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Explore</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Newsletter</h3>
+                <div class="newsletter">
+                    <p>Keep me up to date with content, updates, and offers from me!!</p>
+                    <input type="email" placeholder="Email Address">
+                    <button>Submit</button>
+                </div>
+            </div>
+            <div class="footer-column"></div>
+            <div class="footer-column"></div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Travel 2 Lanka - All Rights Reserved.</p>
+            <p><a href="#" style="color: #ffffff; text-decoration: none;">Privacy Travel Policy</a></p>
+        </div>
+    </footer>
+
+    
+
+
+</body>
+</html>
