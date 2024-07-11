@@ -1,6 +1,8 @@
 # travel_website_html_css_js
 <h3>This is a Sri Lanka Travel Guide website created using HTML, CSS, and JS for my client's university project.</h3>
-![Travel Website](https://github.com/dinistan/travel_website_html_css_js/assets/157032474/18ed0b70-a67e-4a86-a345-c9ef32511b83)
+
+![Travel Website](https://github.com/dinistan/travel_website_html_css_js/assets/157032474/17aad21a-9a33-403c-8df3-ba5e9e10d605)
+
 
 <P>Welcome to the preview of our stunning Sri Lanka travel guide website, built with HTML, CSS, and JavaScript! This design demo showcases a sleek and responsive website that highlights the beauty and charm of Sri Lanka.</P>
 
